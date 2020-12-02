@@ -9,14 +9,13 @@ DEFAULT_SUM_TARGET = 2020
 
 
 def get_sum_terms(expenses, nb_terms, sum_target=DEFAULT_SUM_TARGET):
-    s = set()
-
     if nb_terms == 2:
+        terms = []
         for e1 in expenses:
             e2 = sum_target - e1
             if e2 in expenses:
-                s.update([e1, e2])
-        return list(s)
+                terms = [e1, e2]
+        return terms
     else:
         for i, e1 in enumerate(expenses):
             e2 = sum_target - e1
