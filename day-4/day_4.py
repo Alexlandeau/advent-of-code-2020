@@ -24,7 +24,7 @@ def check_passport_keys(passport):
 
 
 def check_passport_values(passport):
-    # Check patter validity first
+    # Check pattern validity first
     if all(
         [
             bool(re.match("^\d{4}$", passport.get("byr", "_"))),
@@ -36,6 +36,7 @@ def check_passport_values(passport):
             bool(re.match("^\d{9}$", passport.get("pid", "_"))),
         ]
     ):
+        # Check values then
         return all(
             [
                 1920 <= int(passport.get("byr")) <= 2002,
