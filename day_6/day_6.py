@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Read input data
-with open("day-6/input.txt", "r") as f:
+with open("day_6/input.txt", "r") as f:
     form_groups = f.read().split("\n\n")
 
 

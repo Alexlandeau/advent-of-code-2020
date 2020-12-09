@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Read input data
-with open("day-3/input.txt", "r") as f:
+with open("day_3/input.txt", "r") as f:
     grid = f.read().split("\n")
 
 

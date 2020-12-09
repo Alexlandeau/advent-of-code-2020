@@ -4,7 +4,7 @@
 import re
 
 # Read input data
-with open("day-7/input.txt", "r") as f:
+with open("day_7/input.txt", "r") as f:
     rules = f.read().split(".\n")
 
 BAG_COLOR = "shiny gold"

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Read input data
-with open("day-5/input.txt", "r") as f:
+with open("day_5/input.txt", "r") as f:
     boarding_passes = f.read().split("\n")
 
 

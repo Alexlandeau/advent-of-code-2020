@@ -4,7 +4,7 @@
 import re
 
 # Read input data
-with open("day-4/input.txt", "r") as f:
+with open("day_4/input.txt", "r") as f:
     passports = f.read().split("\n\n")
 
 

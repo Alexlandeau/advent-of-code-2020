@@ -5,7 +5,7 @@ import copy
 TEST = False
 
 # Read input data
-with open("day-8/input.txt", "r") as f:
+with open("day_8/input.txt", "r") as f:
     instructions = f.read().split("\n")
 
 if TEST:

@@ -4,7 +4,7 @@
 import re
 
 # Read input data
-with open("day-2/input.txt", "r") as f:
+with open("day_2/input.txt", "r") as f:
     data = f.read().split("\n")
 
 PARSER_PATTERN = "(\d+)-(\d+)\s([a-z]):\s(.*)"
