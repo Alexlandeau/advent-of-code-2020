@@ -4,6 +4,7 @@
 import sys
 from pathlib import Path
 
+
 # Add parent folder to python path and import function from day 1 solution
 sys.path.append(str(Path(".").absolute()))
 from day_1.day_1 import get_sum_terms
@@ -18,9 +19,11 @@ with open("day_9/input.txt", "r") as f:
     outputs = [int(x) for x in f.read().split("\n")]
 
 if TEST:
+    # Override constants
+    DEFAULT_PREAMBLE_LENGTH = 5
+    # Override input data
     with open("day_9/test.txt", "r") as f:
         outputs = [int(x) for x in f.read().split("\n")]
-    DEFAULT_PREAMBLE_LENGTH = 5
 
 
 def find_invalid_output(outputs, preamble_length=DEFAULT_PREAMBLE_LENGTH):
