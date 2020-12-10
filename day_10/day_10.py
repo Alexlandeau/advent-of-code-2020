@@ -5,18 +5,17 @@ import collections
 
 
 TEST = False
+INPUT_FILE = "day_10/input.txt"
+TEST_FILE = "day_10/test.txt"
 INPUT_JOLTAGE = 0
+
+if TEST:
+    INPUT_FILE = TEST_FILE
 
 
 # Read input data
-with open("day_10/input.txt", "r") as f:
+with open(INPUT_FILE, "r") as f:
     joltages = [int(x) for x in f.read().split("\n")]
-
-if TEST:
-    # Override input data
-    with open("day_10/test.txt", "r") as f:
-        joltages = [int(x) for x in f.read().split("\n")]
-
 
 # Part 1
 sorted_joltages = sorted(joltages)
