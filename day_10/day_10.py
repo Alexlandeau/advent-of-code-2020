@@ -17,6 +17,7 @@ if TEST:
 with open(INPUT_FILE, "r") as f:
     joltages = [int(x) for x in f.read().split("\n")]
 
+
 # Part 1
 sorted_joltages = sorted(joltages)
 output_joltage = sorted_joltages[-1] + 3
